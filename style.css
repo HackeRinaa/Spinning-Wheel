@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppings" , sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #c3a3f1, #6414e9);
+    display :flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tittle{
+    position: absolute;
+    margin-top: -300px;
+    margin-bottom: 200px;
+    color: #fff;
+    text-shadow:0 0 5px #c3a3f1;
+    font-size: 20px
+}
+
+.container {
+    height: 350px;
+    width: 350px;
+    background-color: #c3a3f1;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 3s all;
+}
+
+.container div{
+    height: 50%;
+    width: 200px;
+    clip-path: polygon(100% 0 , 50% 100% , 0 0);
+    position: absolute;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    left: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 1000;
+    font-family: monospace;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    writing-mode: vertical-rl;
+}
+
+.container .one{
+    background: #c3a3f1;
+    left: 50%;
+}
+.container .two{
+    background: #d142d4; 
+    transform: rotate(60deg);
+}
+.container .three{
+    background: #441a7e;
+    transform: rotate(120deg);
+}
+.container .four{
+    background: #2a52b0;
+    transform: rotate(180deg);
+}
+.container .five{
+    background: #000000;
+    transform: rotate(240deg);
+}
+.container .six{
+    background: #9d1d7b;
+    transform: rotate(300deg);
+}
+
+.mid{
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	position: absolute;
+	background: #008276;
+}
+#spin{
+	height: 80px;
+	width: 300px;
+	background: #4ed4c6;
+	position: absolute;
+	margin-top: 600px;
+	font-size: 30px;
+	color: white;
+	font-weight: 1000;
+	letter-spacing: 3px;
+	border: 1px solid white;
+	cursor: pointer;
+	box-shadow: 0 5px 10px gray;
+	transition: 0.2s all;
+}
+#spin:hover{
+	box-shadow: none;
+}
+.stoper{
+	height: 50px;
+	width: 40px;
+	background: #ffd600;
+	position: absolute;
+	clip-path: polygon(100% 0,50% 100%, 0 0);
+	margin-top: -350px;
+}
